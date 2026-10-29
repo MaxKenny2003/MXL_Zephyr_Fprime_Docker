@@ -1,0 +1,16 @@
+manifest:
+  remotes:
+    - name: zephyrproject-rtos
+      url-base: https://github.com/zephyrproject-rtos
+  projects:
+    - name: zephyr
+      remote: zephyrproject-rtos
+      revision: main   # or a release tag like v4.x.0
+      import:
+        name-allowlist:
+          - cmsis_6
+          - hal_rpi_pico
+          - picolibc
+          - hal_infineon
+  self:
+    path: my-app

@@ -1,0 +1,7 @@
+services:
+  zephyr:
+    build: .
+    volumes:
+      - .:/app
+    stdin_open: true   # -i
+    tty: true          # -t
