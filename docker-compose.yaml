@@ -2,6 +2,6 @@ services:
   zephyr:
     build: .
     volumes:
-      - .:/app
+      - ./your_code:/root/zephyrproject/your_code
     stdin_open: true   # -i
     tty: true          # -t

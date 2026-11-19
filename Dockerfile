@@ -53,6 +53,9 @@ ENV PATH="/usr/bin:/bin:$PATH"
 #RUN west zephyr-export
 WORKDIR /root/zephyrproject
 
+RUN pip install cmake==3.28.3
+
+#RUN mv /root/zephyrproject/fprime-zephyr-reference /root/zephyrproject/your_code
 
 # Force Docker container to open into a bash terminal
 CMD ["bash"]

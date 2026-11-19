@@ -9,7 +9,7 @@ First make sure that you have docker and docker-compose:
 
 ```
 curl -fsSL https://get.docker.com | sudo sh
-sudo usermod -aG docker $USERs
+sudo usermod -aG docker $USER
 ```
 
 Clone the repo using:
