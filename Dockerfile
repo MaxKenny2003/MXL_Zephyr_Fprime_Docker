@@ -54,6 +54,7 @@ ENV PATH="/usr/bin:/bin:$PATH"
 WORKDIR /root/zephyrproject
 
 RUN pip install cmake==3.28.3
+RUN west blobs fetch hal_infineon
 
 #RUN mv /root/zephyrproject/fprime-zephyr-reference /root/zephyrproject/your_code
 
